@@ -41,3 +41,7 @@ header {
 .hammenu-line1,
 .hammenu-line2,
 .hammenu-line3 {
+    transition: transform .5s, opacity .25s;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
