@@ -45,3 +45,5 @@ header {
     position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: #ffffffe6;
+    width: 24px;
