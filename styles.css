@@ -51,3 +51,8 @@ header {
     cursor: pointer;
     top: 10%;
 }
+
+.navbar-layout img {
+    width: 93px;
+    height: 24px;
+}
