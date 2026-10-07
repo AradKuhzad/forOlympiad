@@ -47,3 +47,7 @@ header {
     transform: translate(-50%, -50%);
     background: #ffffffe6;
     width: 24px;
+    height: 1px;
+    cursor: pointer;
+    top: 10%;
+}
