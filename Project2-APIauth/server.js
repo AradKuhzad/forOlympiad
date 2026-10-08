@@ -31,6 +31,12 @@ app.post("/register", (req,res) => {
     array.push(newuser);
     const jsondata = JSON.stringify(array, null, 2);
 
+    writeFile("users.json", jsondata, "utf-8", (error) => {
+        if (error) {
+            return res.status(500).json({
+                message: "Error saving user"
+            });
+        }
 
     res.json({
         message: "User registered successfully"
