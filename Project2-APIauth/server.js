@@ -5,6 +5,12 @@ app.use(express.json());
 
 app.post("/register", (req,res) => {
     const { username, password } = req.body;
+    readFile("users.json", "utf-8", (error, data) => {
+        if (error) {
+            return res.status(500).json({
+                message: "Error reading users file"
+            });
+        };
 
     res.json({
         message: "User registered successfully"
