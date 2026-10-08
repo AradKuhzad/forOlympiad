@@ -1,0 +1,33 @@
+@media (min-width: 880px) {
+    .navbar-layout {
+        padding: 16px 32px;
+        justify-content: space-between;
+        height: 76px;
+    }
+    .Navbar-module__pSp8Ga__logoFull {
+        display: none;
+    }
+    .Navbar-module__pSp8Ga__logo {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        font-family: inter, "Inter Fallback", sans-serif;
+        color: rgb(156, 156, 157);
+        cursor: pointer;
+    }
+    .item-navmenu {
+        padding: 12px 8px;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        transition: all .2s ease-in-out;
+        white-space: nowrap;
+    }
+
+}
