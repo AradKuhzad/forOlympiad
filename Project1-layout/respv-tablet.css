@@ -20,7 +20,7 @@
         flex-direction: row;
         gap: 16px;
         align-items: center;
-        font-family: inter, "Inter Fallback", sans-serif;
+        font-family: "Inter", sans-serif;
         color: rgb(156, 156, 157);
         cursor: pointer;
     }
@@ -29,9 +29,10 @@
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 0.2px;
-        transition: all .2s ease-in-out;
         white-space: nowrap;
     }
+    .hammenu {
+        display: none;
     }
     .loginbox {
         display: flex;
