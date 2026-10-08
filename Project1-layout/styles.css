@@ -1,14 +1,64 @@
+@font-face {
+    font-family: Inter;
+    src: url(font/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: "Inter Black";
+    src: url(font/Inter-Black.ttf);
+}
+@font-face {
+    font-family: "Inter Bold";
+    src: url(font/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: "Inter ExtraBold";
+    src: url(font/Inter-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Inter ExtraLight";
+    src: url(font/Inter-ExtraLight.ttf);
+}
+@font-face {
+    font-family: "Inter light";
+    src: url(font/Inter-Light.ttf);
+}
+@font-face {
+    font-family: "Inter Meduim";
+    src: url(font/Inter-Medium.ttf);
+}
+@font-face {
+    font-family: "Inter Regular";
+    src: url(font/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: "Inter SemiBold";
+    src: url(font/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Inter Thin" ;
+    src: url(font/Inter-Thin.ttf);
+}
+
 body {
-    background: #07080a;
+    overflow-y: scroll;
+    background-color: #07080a;
 }
 
 header {
-    position: fixed;
+    background: #07080a;
+    height: 100px !important;
+    flex-direction: column
+}
+
+header {
+    position: relative;
     display: flex;
     width: 100%;
     padding: 16px 16px 0px 16px;
     justify-content: center;
     z-index: 2;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .navbar-layout {
@@ -21,7 +71,7 @@ header {
     backdrop-filter: blur(5px);
     border-radius: 16px;
     background: linear-gradient(137deg, #111214bf 4.87%, #0c0d0fe6 75.88%);
-    border: 1.5px solid var(--Card-Border, #ffffff0f);
+    border: 1px solid var(--Card-Border, #ffffff0f);
     justify-content: space-between;
     align-items: center;
     box-shadow: inset 0 1px 1px #ffffff26;
@@ -52,7 +102,19 @@ header {
     top: 10%;
 }
 
-.navbar-layout img {
+.Navbar-module__pSp8Ga__logoFull {
     width: 93px;
     height: 24px;
+}
+
+.Navbar-module__pSp8Ga__logo {
+    display: none;
+}
+
+.nav-menu { 
+    display: none;
+}
+
+.loginbox {
+    display: none;
 }
