@@ -18,6 +18,19 @@ app.post("/register", (req,res) => {
                 message: "Error reading users file"
             });
         };
+    const array = JSON.parse(data);
+    const exists = array.some((user) => {
+        return user.username === username;
+    });
+    if (exists) {
+        return res.status(409).json({
+            message: "Username already exists!"
+        })
+    }
+
+    array.push(newuser);
+    const jsondata = JSON.stringify(array, null, 2);
+
 
     res.json({
         message: "User registered successfully"
