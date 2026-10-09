@@ -57,6 +57,7 @@ header {
     padding: 16px 16px 0px 16px;
     justify-content: center;
     z-index: 2;
+    align-items: center;
     left: 50%;
     transform: translate(-50%);
 }
