@@ -1,6 +1,8 @@
 import express from "express";
+import cors from "cors";
 import { readFile, writeFile } from "fs";
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 app.post("/register", (req,res) => {
