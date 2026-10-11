@@ -32,3 +32,10 @@ body {
     align-items: center;
     background-color: #ffffff;
     border-radius: 14px;
+    width: 319px;
+    height: 274px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    padding: 18px;
+}
+
