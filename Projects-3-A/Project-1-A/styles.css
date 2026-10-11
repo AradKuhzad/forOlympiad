@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "vazir";
+    src: url(vazirmatn-v33.003/fonts/ttf/Vazirmatn-Black.ttf);
+}
+@font-face {
+    font-family: "vazirk";
+    src: url(vazirmatn-v33.003/fonts/ttf/Vazirmatn-Medium.ttf);
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
