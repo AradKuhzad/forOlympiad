@@ -87,6 +87,11 @@ body {
     font-family: "vazirk";
     background-color: #f0e2f0;
 }
+
+.linkedin-box {
+    font-size: 9px;
+    text-align: center;
+    padding: 4px 10px;
     border-radius: 4px;
     font-family: "vazirk";
     background-color: #f0e2f0;
