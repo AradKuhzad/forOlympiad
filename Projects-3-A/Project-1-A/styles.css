@@ -40,6 +40,10 @@ body {
     flex-direction: column;
     padding: 18px;
 }
+.name {
+    position: relative;
+    display: flex;
+    top: 10px;
     font-family: "vazir";
     font-weight: 700;
     color: #333333;
