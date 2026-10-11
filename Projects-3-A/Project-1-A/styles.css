@@ -18,3 +18,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.boxcss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    width: 319px;
