@@ -25,6 +25,8 @@ body {
     align-items: center;
     border-radius: 14px;
     width: 319px;
+    height: 274px
+}
 
 .box-content {
     display: flex;
