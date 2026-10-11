@@ -46,6 +46,8 @@ body {
     top: -3px;
     line-height: 20px;
 }
+
+.socials-boxs {
     display: flex;
     flex-direction: row;
     gap: 10px;
