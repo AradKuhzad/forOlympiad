@@ -40,6 +40,13 @@ body {
     flex-direction: column;
     padding: 18px;
 }
+    width: 97px;
+    width: 97px;
+    top: -5px;
+    border-radius: 50%;
+
+}
+
 .name {
     position: relative;
     display: flex;
