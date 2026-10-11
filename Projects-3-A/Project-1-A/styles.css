@@ -41,6 +41,12 @@ body {
     padding: 18px;
 }
 
+    font-family: "vazirk";
+    text-align: center;
+    top: -3px;
+    line-height: 20px;
+}
+
     display: flex;
     flex-direction: row;
     gap: 10px;
