@@ -40,6 +40,9 @@ body {
     flex-direction: column;
     padding: 18px;
 }
+
+.box-content img {
+    position: relative;
     width: 97px;
     width: 97px;
     top: -5px;
