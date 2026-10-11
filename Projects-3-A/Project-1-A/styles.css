@@ -41,6 +41,9 @@ body {
     padding: 18px;
 }
 
+.description {
+    position: relative;
+    color: rgba(51, 51, 51, 0.6);
     font-size: 14px;
     max-width: 314px;
     font-weight: 400;
