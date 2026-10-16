@@ -1,5 +1,9 @@
 @media (min-width: 768px) {
     .maincontent {
+    .contentpost {
+        width: 100%;
+        flex-grow: 1;
+    }
     .firstpostcontent,
     .secondpostcontent {
         padding-left: 0;
