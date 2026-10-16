@@ -40,11 +40,11 @@ header {
     flex-direction: row;
     direction: rtl;
     padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
     justify-content: center;
     align-items: center;
-    width: 100%;
     gap: 10px;
 }
 
@@ -70,7 +70,6 @@ header {
 .firstposttxt,
 .secondposttxt {
     font-family: 'vazir', sans-serif;
-    width: max-content;
     font-size: 26px;
     font-weight: 700;
 }
@@ -79,7 +78,6 @@ header {
 .secondpostdes {
     font-family: 'vazirsb';
     font-size: 16px;
-    width: max-content;
     font-weight: 100;
 }
 
@@ -134,7 +132,10 @@ header {
     color: blue;
     font-weight: 500;   
 }
+
+.lastboxfCR {
     width: 100%;
+    display: flex;
     background-color: #333333;
     align-items: center;
     justify-content: center;
