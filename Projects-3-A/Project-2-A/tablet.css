@@ -1,5 +1,8 @@
 @media (min-width: 768px) {
     .maincontent {
+        flex-direction: column;
+    }
+    .contentSidebar {
         width: 100%;
     }
     .contentpost {
