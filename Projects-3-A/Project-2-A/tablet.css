@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .maincontent {
         flex-direction: column;
     }
@@ -12,5 +12,5 @@
     .firstpostcontent,
     .secondpostcontent {
         padding-left: 0;
-    }
+    } 
 }
