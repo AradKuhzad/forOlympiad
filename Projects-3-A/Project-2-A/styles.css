@@ -134,6 +134,9 @@ header {
     color: blue;
     font-weight: 500;   
 }
+
+.txtcopyright {
+    color: #f5f5f5;
     font-family: 'vazirsb';
     text-align: center;
 }
