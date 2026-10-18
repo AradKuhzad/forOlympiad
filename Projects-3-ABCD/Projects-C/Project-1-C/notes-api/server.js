@@ -2,7 +2,7 @@ import express from "express";
 const app = express();
 app.use(express.json());
 
-app.get("/notes", (req,res) => {
+    const fregister = await readFile("notes.json", "utf-8");
     res.json([]);
 })
 
