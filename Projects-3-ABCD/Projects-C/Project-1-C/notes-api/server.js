@@ -6,7 +6,7 @@ app.use(express.json());
 
 app.get("/notes", async (req,res) => {
     const fregister = await readFile("notes.json", "utf-8");
-    res.json([]);
+    res.json(fregister);
 })
 
 app.listen(3000, () => {
