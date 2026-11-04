@@ -10,6 +10,7 @@ app.get("/notes", async (req,res) => {
     const notes = JSON.parse(fregister);
     res.json(notes);
 })
+app.post("/notes", async (req, res) => {
     const readiJN = JSON.parse(fpost);
     const posts = {
         text: req.body.text
