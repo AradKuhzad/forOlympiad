@@ -10,6 +10,7 @@ app.get("/notes", async (req,res) => {
     const notes = JSON.parse(fregister);
     res.json(notes);
 })
+    const readiJN = JSON.parse(fpost);
     const posts = {
         text: req.body.text
     const fadd =  await writeFile("./notes.json", addtJN);
