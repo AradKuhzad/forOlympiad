@@ -7,6 +7,7 @@ app.use(express.static("public"));
 
 app.get("/notes", async (req,res) => {
     const fregister = await readFile("notes.json", "utf-8");
+    const notes = JSON.parse(fregister);
     res.json(notes);
 })
     const posts = {
