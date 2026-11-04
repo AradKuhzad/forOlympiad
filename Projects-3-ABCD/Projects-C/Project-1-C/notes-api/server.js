@@ -14,6 +14,7 @@ app.post("/notes", async (req, res) => {
     const readiJN = JSON.parse(fpost);
     const posts = {
         text: req.body.text
+    const addtJN = JSON.stringify(readiJN);
     const fadd =  await writeFile("./notes.json", addtJN);
 })
 
