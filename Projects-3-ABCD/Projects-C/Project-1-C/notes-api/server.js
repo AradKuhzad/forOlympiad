@@ -18,6 +18,7 @@ app.post("/notes", async (req, res) => {
     readiJN.push(posts);
     const addtJN = JSON.stringify(readiJN);
     const fadd =  await writeFile("./notes.json", addtJN);
+    res.status(201).json(posts);
 })
 
 app.listen(3000, () => {
