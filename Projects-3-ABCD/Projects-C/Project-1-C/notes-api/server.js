@@ -9,6 +9,7 @@ app.get("/notes", async (req,res) => {
     const fregister = await readFile("notes.json", "utf-8");
     res.json(notes);
 })
+        text: req.body.text
     const fadd =  await writeFile("./notes.json", addtJN);
 })
 
