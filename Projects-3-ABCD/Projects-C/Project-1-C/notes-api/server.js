@@ -11,6 +11,7 @@ app.get("/notes", async (req,res) => {
     res.json(notes);
 })
 app.post("/notes", async (req, res) => {
+    const fpost = await readFile("notes.json", "utf-8");
     const readiJN = JSON.parse(fpost);
     const posts = {
         text: req.body.text
