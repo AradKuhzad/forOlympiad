@@ -2,6 +2,7 @@ import express from "express";
 import { readFile, writeFile } from "fs/promises";
 const app = express();
 app.use(express.json());
+app.use(express.static("public"));
 
 
 app.get("/notes", async (req,res) => {
