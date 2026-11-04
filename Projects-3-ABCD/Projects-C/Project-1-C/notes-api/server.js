@@ -10,13 +10,16 @@ app.get("/notes", async (req,res) => {
     const notes = JSON.parse(fregister);
     res.json(notes);
 })
+
 app.post("/notes", async (req, res) => {
     const fpost = await readFile("notes.json", "utf-8");
     const readiJN = JSON.parse(fpost);
     const posts = {
         text: req.body.text
+    } 
     readiJN.push(posts);
     const addtJN = JSON.stringify(readiJN);
+
     const fadd =  await writeFile("./notes.json", addtJN);
     res.status(201).json(posts);
 })
