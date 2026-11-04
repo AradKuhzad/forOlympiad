@@ -9,6 +9,8 @@ app.get("/notes", async (req,res) => {
     const fregister = await readFile("notes.json", "utf-8");
     res.json(notes);
 })
+    const fadd =  await writeFile("./notes.json", addtJN);
+})
 
 app.listen(3000, () => {
     console.log("Server is running on port 3000")
