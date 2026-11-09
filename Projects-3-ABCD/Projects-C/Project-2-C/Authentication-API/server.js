@@ -6,6 +6,7 @@ app.use(express.json());
 import bcrypt from "bcrypt";
 
 app.post("/register", async (req,res) => {
+    const user = {
         username: req.body.username,
         password: req.body.password
     }
