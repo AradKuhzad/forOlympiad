@@ -6,7 +6,8 @@ app.use(express.json());
 import bcrypt from "bcrypt";
 
 app.post("/register", async (req,res) => {
-
+        })
+    }
 });
 
 app.listen(3000, () => {
