@@ -6,6 +6,7 @@ app.use(express.json());
 import bcrypt from "bcrypt";
 
 app.post("/register", async (req,res) => {
+    }
     if (!user.username || !user.password) {
         res.status(400).json({
             message: "Fill it!"
