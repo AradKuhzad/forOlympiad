@@ -19,6 +19,7 @@ app.post("/register", async (req,res) => {
     }
     const data = await readFile("users.json", "utf-8");
     const fjson = JSON.parse(data);
+
     const existingUser = fjson.find(u => u.username === user.username);
     if (existingUser) {
         return;
