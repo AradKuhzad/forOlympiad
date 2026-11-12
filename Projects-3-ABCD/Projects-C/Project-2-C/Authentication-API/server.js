@@ -4,6 +4,7 @@ const app = express();
 app.use(express.json());
 
 import { scrypt, randomBytes, timingSafeEqual } from "crypto";
+import { promisify } from "util";
 
 app.post("/register", async (req,res) => {
     const user = {
