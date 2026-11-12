@@ -23,6 +23,7 @@ app.post("/register", async (req,res) => {
     const existingUser = fjson.find(u => u.username === user.username);
     if (existingUser) {
         return;
+    }
     message: "User registered successfully!"
     });
 });
