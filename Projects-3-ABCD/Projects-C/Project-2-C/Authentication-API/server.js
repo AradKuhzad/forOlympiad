@@ -6,6 +6,8 @@ app.use(express.json());
 import { scrypt, randomBytes, timingSafeEqual } from "crypto";
 import { promisify } from "util";
 
+import { readFile, writeFile } from "fs/promises";
+
 app.post("/register", async (req,res) => {
     const user = {
         username: req.body.username,
