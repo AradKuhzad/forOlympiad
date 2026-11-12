@@ -33,6 +33,7 @@ app.post("/register", async (req,res) => {
         username: user.username, 
         password: hashedPassword
     }
+    fjson.push(newUser);
     await writeFile("./users.json", addtjsn);
 
     res.status(201).json({
