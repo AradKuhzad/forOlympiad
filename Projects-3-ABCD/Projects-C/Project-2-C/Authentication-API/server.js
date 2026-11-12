@@ -34,6 +34,7 @@ app.post("/register", async (req,res) => {
         password: hashedPassword
     }
     fjson.push(newUser);
+    const addtjsn = JSON.stringify(fjson, null, 2);
     await writeFile("./users.json", addtjsn);
 
     res.status(201).json({
