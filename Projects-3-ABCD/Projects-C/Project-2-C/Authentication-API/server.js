@@ -3,8 +3,7 @@ const app = express();
 
 app.use(express.json());
 
-import bcrypt from "bcrypt";
-import { readFile, writeFile } from "fs/promises"
+import { scrypt, randomBytes, timingSafeEqual } from "crypto";
 
 app.post("/register", async (req,res) => {
     const user = {
