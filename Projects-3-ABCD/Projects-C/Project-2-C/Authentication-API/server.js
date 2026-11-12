@@ -4,6 +4,7 @@ const app = express();
 app.use(express.json());
 
 import bcrypt from "bcrypt";
+import { readFile, writeFile } from "fs/promises"
 
 app.post("/register", async (req,res) => {
     const user = {
