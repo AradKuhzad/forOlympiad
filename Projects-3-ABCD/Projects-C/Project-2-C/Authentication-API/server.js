@@ -29,6 +29,7 @@ app.post("/register", async (req,res) => {
     }
 
     const hashedPassword = await bcrypt.hash(user.password, 10);
+        password: hashedPassword
     }
     await writeFile("./users.json", addtjsn);
 
