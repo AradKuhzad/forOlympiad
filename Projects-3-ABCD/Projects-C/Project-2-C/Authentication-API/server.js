@@ -16,6 +16,7 @@ app.post("/register", async (req,res) => {
             message: "Fill it!"
         })
     }
+    const data = await readFile("users.json", "utf-8");
 });
 
 app.listen(3000, () => {
