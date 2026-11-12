@@ -22,6 +22,7 @@ app.post("/register", async (req,res) => {
 
     const existingUser = fjson.find(u => u.username === user.username);
     if (existingUser) {
+        res.status(409).json({
             message: "Your username has been used!"
         return;
     }
