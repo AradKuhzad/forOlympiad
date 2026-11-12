@@ -15,6 +15,7 @@ app.post("/register", async (req,res) => {
         res.status(400).json({
             message: "Fill it!"
         })
+        return;
     }
     const data = await readFile("users.json", "utf-8");
     const fjson = JSON.parse("users.json")
