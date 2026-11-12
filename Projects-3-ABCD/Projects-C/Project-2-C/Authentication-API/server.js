@@ -24,6 +24,7 @@ app.post("/register", async (req,res) => {
     if (existingUser) {
         res.status(409).json({
             message: "Your username has been used!"
+        })
         return;
     }
 
