@@ -24,6 +24,7 @@ app.post("/register", async (req,res) => {
     if (existingUser) {
         return;
     }
+
     message: "User registered successfully!"
     });
 });
