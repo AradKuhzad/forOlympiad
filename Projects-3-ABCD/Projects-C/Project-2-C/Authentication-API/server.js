@@ -7,6 +7,7 @@ import { scrypt, randomBytes, timingSafeEqual } from "crypto";
 import { promisify } from "util";
 
 import { readFile, writeFile } from "fs/promises";
+import { promiseHooks } from "v8";
 
 app.post("/register", async (req,res) => {
     const user = {
