@@ -32,6 +32,7 @@ app.post("/register", async (req,res) => {
         return;
     }
 
+    const scryptAsync = promisify(scrypt);
     
     const newUser = {
         username: user.username, 
