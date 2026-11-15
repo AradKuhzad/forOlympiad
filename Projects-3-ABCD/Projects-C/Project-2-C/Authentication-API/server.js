@@ -46,10 +46,13 @@ app.post("/register", async (req,res) => {
     res.status(201).json({
     message: "User registered successfully!"
     });
+});
+
 app.post("/login", async (req,res) => {
     if (!foundUser) { 
         res.status(401).json({
             message: "Invalid username or password"
+    });
     return;
   }
 })
