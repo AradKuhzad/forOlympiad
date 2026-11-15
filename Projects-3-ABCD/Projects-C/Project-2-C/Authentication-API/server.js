@@ -47,6 +47,9 @@ app.post("/register", async (req,res) => {
     message: "User registered successfully!"
     });
 });
+  }
+})
+
 
     app.listen(3000, () => {
     console.log("Server is running on port 3000");
