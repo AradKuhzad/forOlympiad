@@ -47,6 +47,7 @@ app.post("/register", async (req,res) => {
     message: "User registered successfully!"
     });
 app.post("/login", async (req,res) => {
+    if (!foundUser) { 
         res.status(401).json({
     return;
   }
