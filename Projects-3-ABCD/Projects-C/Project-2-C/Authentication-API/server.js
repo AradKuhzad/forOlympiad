@@ -47,6 +47,7 @@ app.post("/register", async (req,res) => {
     message: "User registered successfully!"
     });
 });
+    return;
   }
 })
 
