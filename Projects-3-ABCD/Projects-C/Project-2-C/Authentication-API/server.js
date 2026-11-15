@@ -9,6 +9,8 @@ import { promisify } from "util";
 import { readFile, writeFile } from "fs/promises";
 
 
+const scryptAsync = promisify(scrypt);
+
 app.post("/register", async (req,res) => {
     const user = {
         username: req.body.username,
