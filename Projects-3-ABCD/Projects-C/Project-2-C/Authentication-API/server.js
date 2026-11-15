@@ -38,6 +38,7 @@ app.post("/register", async (req,res) => {
     const newUser = {
         username: user.username, 
         password: key.toString("hex"),
+        salt: salt.toString("hex")
     }
     fjson.push(newUser);
     const addtjsn = JSON.stringify(fjson, null, 2);
