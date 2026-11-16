@@ -55,6 +55,7 @@ app.post("/login", async (req,res) => {
         username: req.body.username,
         password: req.body.password
     }
+    const data = await readFile("users.json", "utf-8");
     const tjson = JSON.parse(data);
     const foundUser = tjson.find(luser => luser.username === user.username);
     if (!foundUser) { 
