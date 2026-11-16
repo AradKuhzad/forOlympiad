@@ -51,6 +51,7 @@ app.post("/register", async (req,res) => {
 });
 
 app.post("/login", async (req,res) => {
+    const user = {
         username: req.body.username,
         password: req.body.password
     const tjson = JSON.parse(data);
