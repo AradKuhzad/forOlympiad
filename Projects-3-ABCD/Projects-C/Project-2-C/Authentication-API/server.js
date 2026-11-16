@@ -57,6 +57,7 @@ app.post("/login", async (req,res) => {
     });
     return;
   }
+  const key = await scryptAsync(user.password, salt, 64);
 })
 
 
