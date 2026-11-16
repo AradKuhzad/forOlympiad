@@ -54,6 +54,7 @@ app.post("/login", async (req,res) => {
     const user = {
         username: req.body.username,
         password: req.body.password
+    }
     const tjson = JSON.parse(data);
     if (!foundUser) { 
         res.status(401).json({
