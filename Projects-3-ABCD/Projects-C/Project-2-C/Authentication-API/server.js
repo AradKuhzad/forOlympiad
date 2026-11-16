@@ -56,6 +56,7 @@ app.post("/login", async (req,res) => {
         password: req.body.password
     }
     const tjson = JSON.parse(data);
+    const foundUser = tjson.find(luser => luser.username === user.username);
     if (!foundUser) { 
         res.status(401).json({
             message: "Invalid username or password"
