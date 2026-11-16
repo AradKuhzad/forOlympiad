@@ -57,6 +57,7 @@ app.post("/login", async (req,res) => {
     });
     return;
   }
+  const salt = Buffer.from(foundUser.salt, "hex");
   const key = await scryptAsync(user.password, salt, 64);
 })
 
