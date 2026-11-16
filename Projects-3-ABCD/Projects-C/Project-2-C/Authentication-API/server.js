@@ -51,6 +51,7 @@ app.post("/register", async (req,res) => {
 });
 
 app.post("/login", async (req,res) => {
+        username: req.body.username,
     const tjson = JSON.parse(data);
     if (!foundUser) { 
         res.status(401).json({
