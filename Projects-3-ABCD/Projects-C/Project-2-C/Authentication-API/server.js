@@ -55,6 +55,7 @@ app.post("/login", async (req,res) => {
         username: req.body.username,
         password: req.body.password
     }
+        if (!user.username || !user.password) {
         res.status(400).json({
             message: "Fill it!"
         })
