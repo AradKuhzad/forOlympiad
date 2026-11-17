@@ -6,3 +6,4 @@ CREATE TABLE users (
     role VARCHAR(20) DEFAULT 'member' CHECK (role IN ('manager', 'member')) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
+    name VARCHAR(100) NOT NULL,
