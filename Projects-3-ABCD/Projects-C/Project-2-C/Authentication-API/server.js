@@ -56,6 +56,7 @@ app.post("/login", async (req,res) => {
         password: req.body.password
     }
         })
+        return;
     }
     const data = await readFile("users.json", "utf-8");
     const tjson = JSON.parse(data);
