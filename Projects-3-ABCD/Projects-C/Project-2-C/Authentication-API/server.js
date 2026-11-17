@@ -74,6 +74,7 @@ app.post("/login", async (req,res) => {
     })
   }
 
+    const isValid = timingSafeEqual(key, storedKey);
 
   if (isValid) {
     res.status(200).json({
