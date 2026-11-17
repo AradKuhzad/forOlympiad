@@ -15,3 +15,4 @@ VALUES ('Camera', 'Canon camera', 'Photography');
 INSERT INTO users (username, password_hash, salt, role)
 VALUES ('John#D', '12452124', '12452124', 'member');
 
+VALUES ('Projector', '', 'Electronics');
