@@ -11,3 +11,4 @@ CREATE TABLE equipment (
     category VARCHAR(50) NOT NULL
 );
 CREATE TABLE loans (
+    user_id INTEGER REFERENCES users(id) NOT NULL,
