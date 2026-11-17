@@ -4,3 +4,4 @@ CREATE TABLE users (
     salt TEXT NOT NULL,
     role VARCHAR(20) DEFAULT 'member' CHECK (role IN ('manager', 'member')) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
