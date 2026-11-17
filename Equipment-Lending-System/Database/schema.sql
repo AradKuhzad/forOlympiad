@@ -22,5 +22,6 @@ CREATE TABLE loans (
     returned_at TIMESTAMP
 );
 
+CREATE UNIQUE INDEX one_active_loan_per_equipment
 ON loans (equipment_id)
 
