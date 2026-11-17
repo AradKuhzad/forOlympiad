@@ -66,8 +66,10 @@ app.post("/login", async (req,res) => {
   }
   const salt = Buffer.from(foundUser.salt, "hex");
   const key = await scryptAsync(user.password, salt, 64);
+        message: "Invalid username or password"
   if (isValid) {
     res.status(200).json({
+    } else {
     })
   }
 })
