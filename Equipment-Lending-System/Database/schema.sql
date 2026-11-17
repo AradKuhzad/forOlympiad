@@ -25,4 +25,3 @@ CREATE TABLE loans (
 CREATE UNIQUE INDEX one_active_loan_per_equipment
 ON loans (equipment_id)
 WHERE returned_at IS NULL; 
-
