@@ -15,6 +15,7 @@ CREATE TABLE equipment (
 );
 
 CREATE TABLE loans (
+    id SERIAL PRIMARY KEY, 
     user_id INTEGER REFERENCES users(id) NOT NULL,
     borrowed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
 );
