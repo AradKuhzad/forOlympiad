@@ -69,6 +69,7 @@ app.post("/login", async (req,res) => {
   const storedKey = Buffer.from(foundUser.password, "hex");
   if (key.length !== storedKey.length) {
         message: "Invalid username or password"
+
   if (isValid) {
     res.status(200).json({
     } else {
