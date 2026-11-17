@@ -12,3 +12,4 @@ CREATE TABLE equipment (
 );
 CREATE TABLE loans (
     user_id INTEGER REFERENCES users(id) NOT NULL,
+    borrowed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
