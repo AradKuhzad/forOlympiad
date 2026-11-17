@@ -12,4 +12,5 @@ INSERT INTO equipment (name, description, category)
 VALUES ('Camera', 'Canon camera', 'Photography');
 
 
+INSERT INTO users (username, password_hash, salt, role)
 
