@@ -70,6 +70,7 @@ app.post("/login", async (req,res) => {
 
   if (key.length !== storedKey.length) {
         message: "Invalid username or password"
+    })
 
 
   if (isValid) {
