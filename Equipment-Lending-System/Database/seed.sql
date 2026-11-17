@@ -19,3 +19,4 @@ INSERT INTO equipment (name, description, category)
 VALUES ('Projector', '', 'Electronics');
 
 SELECT id, username FROM users;
+SELECT id, name FROM equipment;
