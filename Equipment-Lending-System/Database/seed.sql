@@ -12,3 +12,4 @@ INSERT INTO equipment (name, description, category)
 VALUES ('Camera', 'Canon camera', 'Photography');
 
 
+
