@@ -17,3 +17,5 @@ VALUES ('John#D', '12452124', '12452124', 'member');
 
 INSERT INTO equipment (name, description, category)
 VALUES ('Projector', '', 'Electronics');
+
+SELECT id, username FROM users;
