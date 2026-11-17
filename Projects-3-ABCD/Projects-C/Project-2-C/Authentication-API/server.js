@@ -80,6 +80,7 @@ app.post("/login", async (req,res) => {
     res.status(200).json({
         message: "It's Valid"
     })
+    return;
     } else {
     })
   }
