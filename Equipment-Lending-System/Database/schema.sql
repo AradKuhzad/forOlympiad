@@ -1,4 +1,4 @@
 CREATE TABLE users (
     id SERIAL PRIMARY KEY, 
     password_hash TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+    salt TEXT NOT NULL,
