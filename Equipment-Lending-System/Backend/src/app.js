@@ -4,6 +4,7 @@ app.use(express.json());
 
 import { pool } from "./config/db.js";
 
+const fQuery = async () => {
     try {
         const result = await pool.query("SELECT NOW()");
 
