@@ -15,6 +15,7 @@ const fQuery = async () => {
 fQuery();
 
 app.get("/equipment", async (req,res) => {
+        return res.json(result.rows);
 
 app.listen(3000, () => {
     console.log("app is running on port 3000");
