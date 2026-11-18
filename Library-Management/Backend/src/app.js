@@ -12,5 +12,6 @@ app.get("/books", (req,res) => {
         const SQL = `INSERT INTO books (title, author, category)
         const result = db.prepare(SQL).get(title, author, category);
         return res.status(201).json({
+            message: "It's work successfully!",
     } catch (error) {
             error: "It doesn't work!"
