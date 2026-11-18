@@ -10,6 +10,7 @@ app.get("/books", (req,res) => {
 app.post("/books", (req,res) => {
     const { title, author, category} = req.body;
     if (!title || !category) {
+        return res.status(400).json({
             error: "Missing required fields"
     try {
         const SQL = `INSERT INTO books (title, author, category)
