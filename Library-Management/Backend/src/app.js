@@ -3,6 +3,7 @@ import express from "express";
 const app = express();
 app.get("/books", (req,res) => {
         const result = db.prepare("SELECT * FROM books").all();
+    } catch (error) {
         return res.status(500).json({
             error: "Internal server error!"
     const { title, author, category} = req.body;
