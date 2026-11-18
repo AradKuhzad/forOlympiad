@@ -1,6 +1,7 @@
 import { db } from "./config/db.js"; 
 import express from "express";
 const app = express();
+
 app.get("/books", (req,res) => {
         const result = db.prepare("SELECT * FROM books").all();
     } catch (error) {
