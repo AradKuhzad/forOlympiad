@@ -17,6 +17,7 @@ fQuery();
 app.get("/equipment", async (req,res) => {
         const result = await pool.query("SELECT * FROM equipment")
         return res.json(result.rows);
+        return res.status(500).json({
         });
     }
 })
