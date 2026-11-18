@@ -3,6 +3,7 @@ import express from "express";
 const app = express();
 
 app.get("/books", (req,res) => {
+    try {
         const result = db.prepare("SELECT * FROM books").all();
         return res.json(result);
     } catch (error) {
@@ -14,6 +15,7 @@ app.post("/books", (req,res) => {
     if (!title || !category) {
         return res.status(400).json({
             error: "Missing required fields"
+        });
     try {
         const SQL = `INSERT INTO books (title, author, category)
         RETURNING *`;
