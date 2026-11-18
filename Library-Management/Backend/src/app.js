@@ -18,5 +18,6 @@ app.post("/books", (req,res) => {
         const result = db.prepare(SQL).get(title, author, category);
         return res.status(201).json({
             message: "It's work successfully!",
+            book: result
     } catch (error) {
             error: "It doesn't work!"
