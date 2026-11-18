@@ -1,6 +1,7 @@
 import { db } from "./config/db.js"; 
 import express from "express";
 const app = express();
+app.use(express.json());
 
 app.get("/books", (req,res) => {
     try {
@@ -9,6 +10,9 @@ app.get("/books", (req,res) => {
     } catch (error) {
         return res.status(500).json({
             error: "Internal server error!"
+        })
+    }
+});
 
 app.post("/books", (req,res) => {
     const { title, author, category} = req.body;
@@ -16,18 +20,24 @@ app.post("/books", (req,res) => {
         return res.status(400).json({
             error: "Missing required fields"
         });
+    }
     try {
         const SQL = `INSERT INTO books (title, author, category)
+        VALUES (?, ?, ?)
         RETURNING *`;
         const result = db.prepare(SQL).get(title, author, category);
         return res.status(201).json({
             message: "It's work successfully!",
             book: result
+        })   
     } catch (error) {
         res.status(500).json({
             error: "It doesn't work!"
+        })
         console.log(error.message);
+    }
 });
 
 app.listen(3000, () => {
     console.log("Server is running on port 3000");
+});
