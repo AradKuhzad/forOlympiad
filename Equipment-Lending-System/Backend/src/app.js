@@ -33,6 +33,7 @@ app.post("/equipment", async (req,res) => {
         });
     }
     try {
+        const SQL = `INSERT INTO equipment (name, description, category)
         VALUES ($1, $2, $3)
         const result = await pool.query(SQL, [name, description, category])
     } catch (error) {
