@@ -4,6 +4,7 @@ const app = express();
 app.get("/books", (req,res) => {
         const result = db.prepare("SELECT * FROM books").all();
         return res.status(500).json({
+            error: "Internal server error!"
     const { title, author, category} = req.body;
     if (!title || !category) {
             error: "Missing required fields"
