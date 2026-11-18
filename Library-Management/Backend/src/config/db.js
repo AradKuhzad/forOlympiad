@@ -5,6 +5,7 @@ const db = new DatabaseSync("./database/library.db");
    db.exec(`
     CREATE TABLE books (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
+        title VARCHAR(100) NOT NULL,
         category VARCHAR(50) NOT NULL,
             CHECK (available IN ('Yes', 'No')) NOT NULL
 export { db };
