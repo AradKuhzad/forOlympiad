@@ -4,6 +4,7 @@ const app = express();
 
 app.get("/books", (req,res) => {
         const result = db.prepare("SELECT * FROM books").all();
+        return res.json(result);
     } catch (error) {
         return res.status(500).json({
             error: "Internal server error!"
