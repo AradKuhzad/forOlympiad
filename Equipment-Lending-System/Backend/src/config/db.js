@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const { Pool } = pg;
+
 });
 
 export { pool };
