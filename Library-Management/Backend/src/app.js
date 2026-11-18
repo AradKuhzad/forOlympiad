@@ -14,6 +14,7 @@ app.post("/books", (req,res) => {
             error: "Missing required fields"
     try {
         const SQL = `INSERT INTO books (title, author, category)
+        RETURNING *`;
         const result = db.prepare(SQL).get(title, author, category);
         return res.status(201).json({
             message: "It's work successfully!",
