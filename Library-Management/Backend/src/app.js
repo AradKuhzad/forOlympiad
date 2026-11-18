@@ -23,4 +23,5 @@ app.post("/books", (req,res) => {
             error: "It doesn't work!"
         console.log(error.message);
 
+app.listen(3000, () => {
     console.log("Server is running on port 3000");
