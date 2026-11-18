@@ -10,3 +10,4 @@ app.get("/books", (req,res) => {
         const SQL = `INSERT INTO books (title, author, category)
         const result = db.prepare(SQL).get(title, author, category);
         return res.status(201).json({
+            error: "It doesn't work!"
