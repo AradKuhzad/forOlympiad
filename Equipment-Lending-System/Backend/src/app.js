@@ -27,6 +27,7 @@ app.get("/equipment", async (req,res) => {
 
 app.post("/equipment", async (req,res) => {
     const { name, description, category } = req.body;
+    if (!name || !category) {
         return res.status(400).json({
             error: "Missing required fields"
         });
