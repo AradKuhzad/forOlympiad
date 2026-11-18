@@ -21,3 +21,4 @@ app.post("/books", (req,res) => {
             book: result
     } catch (error) {
             error: "It doesn't work!"
+        console.log(error.message);
