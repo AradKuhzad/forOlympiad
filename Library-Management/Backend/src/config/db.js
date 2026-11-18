@@ -9,3 +9,4 @@ const db = new DatabaseSync("./database/library.db");
             CHECK (available IN ('Yes', 'No')) NOT NULL
 const result = db.prepare(`
     SELECT name FROM sqlite_master
+    WHERE TYPE = 'table'
