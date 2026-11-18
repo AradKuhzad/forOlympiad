@@ -20,6 +20,7 @@ app.post("/books", (req,res) => {
             message: "It's work successfully!",
             book: result
     } catch (error) {
+        res.status(500).json({
             error: "It doesn't work!"
         console.log(error.message);
 
