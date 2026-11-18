@@ -36,6 +36,7 @@ The repository also contains HTML and CSS projects focused on page structure, st
 - Express.js
 - SQL
 - PostgreSQL
+- SQLite
 - JSON
 - TypeScript configuration and related tooling in selected projects
 
