@@ -29,6 +29,7 @@ app.post("/equipment", async (req,res) => {
             error: "Missing required fields"
     try {
         VALUES ($1, $2, $3)
+        const result = await pool.query(SQL, [name, description, category])
 
 app.listen(3000, () => {
     console.log("app is running on port 3000");
