@@ -34,6 +34,7 @@ app.post("/equipment", async (req,res) => {
     try {
         VALUES ($1, $2, $3)
         const result = await pool.query(SQL, [name, description, category])
+    } catch (error) {
 });
 
 app.listen(3000, () => {
