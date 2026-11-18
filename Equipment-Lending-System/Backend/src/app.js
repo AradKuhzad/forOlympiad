@@ -7,6 +7,7 @@ import { pool } from "./config/db.js";
 const fQuery = async () => {
     try {
         const result = await pool.query("SELECT NOW()");
+    } catch (error) {
         console.error(error.message);
 
 app.listen(3000, () => {
