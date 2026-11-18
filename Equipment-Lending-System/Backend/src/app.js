@@ -31,6 +31,7 @@ app.post("/equipment", async (req,res) => {
         return res.status(400).json({
             error: "Missing required fields"
         });
+    }
     try {
         VALUES ($1, $2, $3)
         const result = await pool.query(SQL, [name, description, category])
