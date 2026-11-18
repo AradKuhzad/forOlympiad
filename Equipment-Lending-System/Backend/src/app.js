@@ -37,6 +37,7 @@ app.post("/equipment", async (req,res) => {
         VALUES ($1, $2, $3)
         RETURNING *`;
         const result = await pool.query(SQL, [name, description, category])
+            return res.status(201).json(result.rows[0]);
     } catch (error) {
 });
 
