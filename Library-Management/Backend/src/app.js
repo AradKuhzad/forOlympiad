@@ -9,4 +9,4 @@ app.get("/books", (req,res) => {
             error: "Missing required fields"
         const SQL = `INSERT INTO books (title, author, category)
         const result = db.prepare(SQL).get(title, author, category);
-        })
+        return res.status(201).json({
