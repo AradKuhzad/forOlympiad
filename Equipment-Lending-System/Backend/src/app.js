@@ -24,7 +24,7 @@ app.get("/equipment", async (req,res) => {
         });
     }
 app.post("/equipment", async (req,res) => {
-    }
+            error: "Missing required fields"
 
 app.listen(3000, () => {
     console.log("app is running on port 3000");
