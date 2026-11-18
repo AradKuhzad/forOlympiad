@@ -1,3 +1,4 @@
+import pg from "pg";
 
 dotenv.config();
 
