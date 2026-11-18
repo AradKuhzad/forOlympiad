@@ -18,6 +18,7 @@ app.get("/equipment", async (req,res) => {
         const result = await pool.query("SELECT * FROM equipment")
         return res.json(result.rows);
         });
+    }
 
 app.listen(3000, () => {
     console.log("app is running on port 3000");
