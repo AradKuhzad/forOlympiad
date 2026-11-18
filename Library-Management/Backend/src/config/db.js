@@ -7,6 +7,7 @@ const db = new DatabaseSync("./database/library.db");
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         title VARCHAR(100) NOT NULL,
         category VARCHAR(50) NOT NULL,
+        available TEXT DEFAULT 'Yes'
             CHECK (available IN ('Yes', 'No')) NOT NULL
 export { db };
 const result = db.prepare(`
