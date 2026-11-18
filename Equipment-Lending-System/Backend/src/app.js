@@ -23,6 +23,7 @@ app.get("/equipment", async (req,res) => {
             error: "Internal server error!"
         });
     }
+
 app.post("/equipment", async (req,res) => {
     const { name, description, category } = req.body;
         return res.status(400).json({
