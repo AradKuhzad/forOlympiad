@@ -5,4 +5,4 @@ dotenv.config();
 
 const { Pool } = pg;
 
-
+export { pool };
