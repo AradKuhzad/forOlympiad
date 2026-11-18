@@ -11,6 +11,8 @@ const fQuery = async () => {
     } catch (error) {
         console.error(error.message);
     }
+}
+fQuery();
 
 app.listen(3000, () => {
     console.log("app is running on port 3000");
