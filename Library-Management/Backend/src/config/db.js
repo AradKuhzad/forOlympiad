@@ -7,3 +7,4 @@ const db = new DatabaseSync("./database/library.db");
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         category VARCHAR(50) NOT NULL,
             CHECK (available IN ('Yes', 'No')) NOT NULL
+const result = db.prepare(`
