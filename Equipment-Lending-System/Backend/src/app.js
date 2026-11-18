@@ -20,6 +20,7 @@ app.get("/equipment", async (req,res) => {
         return res.json(result.rows);
     } catch (error) {
         return res.status(500).json({
+            error: "Internal server error!"
         });
     }
 })
