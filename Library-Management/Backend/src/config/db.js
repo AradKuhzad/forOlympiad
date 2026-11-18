@@ -8,3 +8,4 @@ const db = new DatabaseSync("./database/library.db");
         category VARCHAR(50) NOT NULL,
             CHECK (available IN ('Yes', 'No')) NOT NULL
 const result = db.prepare(`
+    SELECT name FROM sqlite_master
