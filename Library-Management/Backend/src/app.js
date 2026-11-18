@@ -6,6 +6,7 @@ app.get("/books", (req,res) => {
     } catch (error) {
         return res.status(500).json({
             error: "Internal server error!"
+
 app.post("/books", (req,res) => {
     const { title, author, category} = req.body;
     if (!title || !category) {
