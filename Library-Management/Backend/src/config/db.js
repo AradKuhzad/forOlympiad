@@ -10,3 +10,4 @@ const db = new DatabaseSync("./database/library.db");
 const result = db.prepare(`
     SELECT name FROM sqlite_master
     WHERE TYPE = 'table'
+    console.log(result.all());
