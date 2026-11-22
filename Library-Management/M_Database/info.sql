@@ -6,5 +6,3 @@ CREATE TABLE IF NOT EXISTS books (
    available TEXT DEFAULT 'Yes'
    CHECK (available IN ('Yes', 'No')) NOT NULL
 );
-
-DELETE FROM books;
