@@ -2,6 +2,13 @@ import { db } from "./config/db.js";
 import express from "express";
 const app = express();
 app.use(express.json());
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const filename = fileURLToPath(import.meta.url);
+const dirname = path.dirname(filename);
+
+app.use(express.static(path.join(dirname, "../../Frontend")));
 
 app.get("/books", (req,res) => {
     try {
