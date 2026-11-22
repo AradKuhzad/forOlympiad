@@ -73,6 +73,11 @@ app.put("/books/:id", (req, res) => {
             error: "Missing required fields"
         });
     }
+
+    try {
+        const result = db.prepare(`
+            UPDATE books
+            SET title = ?, author = ?, category = ?
                 error: "Book not found"
             });
         }
