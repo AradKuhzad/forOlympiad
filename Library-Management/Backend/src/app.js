@@ -2,6 +2,7 @@ import { db } from "./config/db.js";
 import express from "express";
 const app = express();
 app.use(express.json());
+
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
