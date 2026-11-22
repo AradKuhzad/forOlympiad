@@ -52,6 +52,15 @@ app.delete("/books/:id", (req,res) => {
     const resultfd = db.prepare(
         "DELETE FROM books WHERE id = ?"
     ).run(id);
+                error: "Book not found"
+            });
+        }
+
+        return res.status(200).json({
+            message: "Book updated successfully"
+        });
+
+    } catch (error) {
         console.error(error.message);
 
         return res.status(500).json({
