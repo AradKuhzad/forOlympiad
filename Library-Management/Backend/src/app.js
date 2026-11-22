@@ -44,7 +44,14 @@ app.post("/books", (req,res) => {
         })
         console.log(error.message);
     }
+
 });
+
+app.delete("/books/:id", (req,res) => {
+    const id = req.params.id;
+    const resultfd = db.prepare(
+        "DELETE FROM books WHERE id = ?"
+    ).run(id);
 
 app.listen(3000, () => {
     console.log("Server is running on port 3000");
