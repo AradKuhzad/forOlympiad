@@ -56,6 +56,10 @@ app.delete("/books/:id", (req,res) => {
         res.status(200).json({
             message: "It works successfully"
         })
+    } else {
+        res.status(404).json({
+            error: "It doesn't work!"
+        })
                 error: "Book not found"
             });
         }
