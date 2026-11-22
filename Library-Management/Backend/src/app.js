@@ -78,6 +78,11 @@ app.put("/books/:id", (req, res) => {
         const result = db.prepare(`
             UPDATE books
             SET title = ?, author = ?, category = ?
+            WHERE id = ?
+        `).run(title, author, category, id);
+
+        if (result.changes === 0) {
+            return res.status(404).json({
                 error: "Book not found"
             });
         }
