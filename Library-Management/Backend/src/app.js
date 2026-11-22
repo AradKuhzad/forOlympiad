@@ -52,6 +52,14 @@ app.delete("/books/:id", (req,res) => {
     const resultfd = db.prepare(
         "DELETE FROM books WHERE id = ?"
     ).run(id);
+        console.error(error.message);
+
+        return res.status(500).json({
+            error: "Internal server error"
+        });
+    }
+});
+
 
 app.listen(3000, () => {
     console.log("Server is running on port 3000");
