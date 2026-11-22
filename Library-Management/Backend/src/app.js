@@ -68,6 +68,11 @@ app.put("/books/:id", (req, res) => {
     const id = req.params.id;
     const { title, author, category } = req.body;
 
+    if (!title || !category) {
+        return res.status(400).json({
+            error: "Missing required fields"
+        });
+    }
                 error: "Book not found"
             });
         }
