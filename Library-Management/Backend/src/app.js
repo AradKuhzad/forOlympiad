@@ -60,6 +60,14 @@ app.delete("/books/:id", (req,res) => {
         res.status(404).json({
             error: "It doesn't work!"
         })
+    }
+});
+
+
+app.put("/books/:id", (req, res) => {
+    const id = req.params.id;
+    const { title, author, category } = req.body;
+
                 error: "Book not found"
             });
         }
